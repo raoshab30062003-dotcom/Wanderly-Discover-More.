@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+:root { font-family: 'DM Sans', sans-serif; color: #142b45; font-synthesis: none; text-rendering: optimizeLegibility; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+.font-display { font-family: Georgia, 'Times New Roman', serif; font-weight: 700; }
+.script { font-family: 'Pacifico', cursive; font-weight: 400; letter-spacing: -.045em; }
+.hero { isolation: isolate; }
+.hero-sky { z-index: -2; background: linear-gradient(115deg, #f8fcff 0%, #e6f4ff 48%, #b9e1fa 100%); }
+.hero-photo { z-index: -1; opacity: .44; background-image: linear-gradient(90deg, rgba(248,252,255,.97) 0%, rgba(248,252,255,.86) 37%, rgba(248,252,255,.08) 76%), url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2000&q=90'); background-size: cover; background-position: center 48%; }
+.nav-link { position: relative; padding: 9px 0; font-size: 13px; font-weight: 700; color: #263d55; transition: color .2s; }
+.nav-link:hover, .nav-link.active { color: #f27a16; }
+.nav-link.active::after { position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; border-radius: 4px; background: #ff861c; content: ''; }
+.section-kicker { color: #ed7918; font-size: 11px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
+.section-title { margin-top: 10px; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.1rem, 4vw, 3.2rem); font-weight: 700; letter-spacing: -.045em; line-height: 1.08; }
+.destination-card { overflow: hidden; border-radius: 22px; background: white; box-shadow: 0 12px 32px rgba(24,58,92,.10); }
+@media (max-width: 767px) { .hero { min-height: 800px; align-items: flex-start; } .hero-photo { opacity: .25; background-position: 62% center; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
